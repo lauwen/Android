@@ -1,5 +1,6 @@
 package com.xwen.friapp;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,16 +12,16 @@ import android.widget.Toast;
 import android.view.View.OnClickListener;
 
 
-public class CbsActivity extends AppCompatActivity {
+public class CbsActivity extends Activity {
 
 //    private Button btn1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        if (getSupportActionBar() != null){
-            getSupportActionBar().hide();
-        }
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        if (getSupportActionBar() != null){
+//            getSupportActionBar().hide();
+//        }
         setContentView(R.layout.activity_cbs);
 
         Button btn1 = (Button) findViewById(R.id.btn1);

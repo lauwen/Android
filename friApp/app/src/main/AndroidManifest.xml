@@ -7,17 +7,25 @@
         android:icon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".friActivity"
+        <activity
+            android:name=".friActivity"
             android:label="friApp">
-        </activity>
-        <activity android:name=".CbsActivity"
-            android:label="cbsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity
+            android:name=".CbsActivity"
+            android:label="cbsActivity">
+        </activity>
+        <activity android:name=".secActivity"
+            android:label="secActivity"></activity>
+        <intent-filter>
+            <action android:name = "com.example.activityest.ACTION_START"/>
+        </intent-filter>
     </application>
 
 </manifest>
